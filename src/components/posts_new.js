@@ -1,14 +1,32 @@
 import React, { Component } from 'react';
-import { Field, redux-form } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 
 class PostsNew extends Component {
+  renderField(field) {
+    return (
+      <div className="form-group">
+        <label>{field.label}</label>
+        <input className="form-control"
+          type="text"
+          {...field.input}
+        />
+      </div>
+    )
+  }
+
   render() {
     return (
       <div>
         <form>
           <Field
+            label="Title"
             name="title"
-            component={}
+            component={this.renderField}
+          />
+          <Field
+            label="Tags"
+            name="tags"
+            component={this.renderField}
           />
         </form>
       </div>
