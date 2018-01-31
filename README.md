@@ -1,25 +1,22 @@
-# ReduxSimpleStarter
+# Blog
+A simple blog allowing the user to add posts, view them in detail and delete them when necessary. 
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+Using advanced redux techniques the site runs incredibly quickly, storing data from a remote API and only making it available to React when necessary.
 
-### Getting Started
+### React-Router
+By tying components to paths and using BrowserRouter's Switch function it was possibly to display to display only one component on the page at a time without actually changing address. Having the post view page route defined as '/posts/:id' gave scope to access individual posts using a method by with Redux only made available the data specific to that post id.
 
-There are two methods for getting started with this repo.
+### Action Creators
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
 
+
+
+
+### To run
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
+$ git clone https://github.com/joecowton/react-redux-blog/
+$ cd react-redux-blog
+$ npm install
+$ npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
