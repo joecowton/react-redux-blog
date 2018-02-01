@@ -13,8 +13,13 @@ By tying components to paths and using BrowserRouter's Switch function it was po
 
 ![App](images/1.png)
 
+### Post Reducers
 
+![App](images/3.png)
 
+### Redux Form validation
+
+![App](images/6.png)
 
 
 
